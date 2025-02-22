@@ -43,10 +43,12 @@
         <section class="main-content">
             <!-- Banner Autoslide -->
             <aside class="main-container">
-                <img src="assets/1.jpg" alt="ilustrasi" class="ilustrasi1">
-                <p id="libur">
-                    "Liburan jadi menyenangkan bersama Travel Agentku."
-                </p>
+                <div class="gambar">
+                    <img src="assets/1.jpg" alt="ilustrasi" class="ilustrasi1">
+                </div>
+                    <p id="caption">
+                        "Liburan jadi menyenangkan bersama Travel Agentku."
+                    </p>
 
                 <div class="ikon">
                     <div class="avatar">
@@ -61,7 +63,29 @@
 
             <!-- Form Contact Us -->
             <aside class="main-container">
-                <p>Form Contact Us</p>
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                    <p class="contact-deskripsi">
+                        Sales akan menghubungi anda 1x24 Jam setelah data kami terima.
+                    </p>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" placeholder="First and last name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" placeholder="example@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">What are you interest in?</label>
+                            <select id="interest">
+                                <option>Select option</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-submit">SEND</button>
+                    </form>
+                </div>
             </aside>
         </section>
 
