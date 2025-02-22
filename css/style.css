@@ -1,1 +1,169 @@
-/* Ini CSS External */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333;
+    padding: 5px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-size: 18px;
+
+    font-weight: 400;
+    text-decoration: none;
+
+    color: white;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.foto {
+    margin-left: auto;
+}
+
+.foto img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:  2px solid white;
+}
+
+.judul1 {
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.judul2 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* #content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+     */
+
+.main-content {
+    display: flex;
+    gap: 10px;
+}
+
+.main-container {
+    flex: 1;
+    align-content: center;
+    text-align: center;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.ilustrasi1 {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+#libur {
+    color: gray;
+    font-style: italic;
+    text-align: left;
+    padding: 10px;
+}
+
+.ikon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 35px;
+}
+
+.text {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+}
+
+.gray-text {
+    color: gray;
+}
+
+#our-package-section>header {
+    height: 100px;
+    align-content: center;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.our-package-content {
+    border: 1px solid;
+    height: 300px;
+    align-content: center;
+    text-align: center;
+}
+
+#call-us-section>header {
+    height: 100px;
+    align-content: center;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.call-us-content {
+    border: 1px solid;
+    height: 300px;
+    align-content: center;
+    text-align: center;
+}
+
+aside {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+}
