@@ -2,22 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Navbar */
 nav {
     background-color: #333;
-    padding: 5px;
+    padding: 10px 0;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+body {
+    padding-top: 70px;
 }
 
 nav a {
     font-size: 18px;
-
     font-weight: 400;
     text-decoration: none;
-
     color: white;
 }
 
@@ -45,7 +53,14 @@ nav a:hover {
     height: 40px;
     border-radius: 50%;
     border:  2px solid white;
+    transition: transform ease;
 }
+
+.foto img:hover {
+    transform: scale(1.05);
+}
+
+/* Home */
 
 .judul1 {
     font-size: 20px;
@@ -58,28 +73,6 @@ nav a:hover {
     text-align: center;
     padding-bottom: 10px;
 }
-
-/* #content {
-    flex: 5;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 1rem 2rem;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 20px;
-}
-
-main {
-    padding: 20px;
-    display: flex;
-    gap: 1.5rem;
-}
-
-
-     */
 
 .main-content {
     display: flex;
@@ -121,8 +114,8 @@ main {
 
 .ikon {
     display: flex;
-    align-items: center;
     gap: 10px;
+    margin-left: 20px;
 }
 
 .avatar {
@@ -137,6 +130,48 @@ main {
 
 .gray-text {
     color: gray;
+}
+
+.informasi {
+    max-width: 600px;
+    padding: 24px;
+    text-align: left;
+}
+
+.deskripsi {
+    color: #4b5563;
+    font-size: 1.125rem;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.nomer {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    background-color: #e5e7eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #374151;
+    font-weight: 600;
+}
+
+.text-nomer {
+    margin-left: 16px;
+    color: #6b7280;
 }
 
 .contact-form {
@@ -195,38 +230,119 @@ main {
     background: #1f2937;
 }
 
-#our-package-section>header {
-    height: 100px;
-    align-content: center;
+/* Our Packages */
+#our-package-section {
+    background-color: #f9f9f9;
+    padding: 40px 10%;
     text-align: center;
-    background-color: aliceblue;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
 }
 
-.our-package-content {
-    border: 1px solid;
-    height: 300px;
-    align-content: center;
+#our-package-section header h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.our-package-content 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    justify-content: center;
+}
+
+.destination {
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.destination:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 50px;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+/* Call Us */
+#call-us-section {
+    background-color: #f9f9f9;
     text-align: center;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 100px;
+    margin: 10px;
 }
 
-#call-us-section>header {
-    height: 100px;
-    align-content: center;
-    text-align: center;
-    background-color: antiquewhite;
+#call-us-section header h1 {
+    font-size: 28px;
+    color: #333;
 }
 
-.call-us-content {
-    border: 1px solid;
-    height: 300px;
-    align-content: center;
-    text-align: center;
+.call-us-content p {
+    color: #666;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
-aside {
-    flex: 1;
+.btn-submit2 {
+    background: #374151;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 70px;
 }
 
+.btn-submit2:hover {
+    background: #1f2937;
+}
+
+/* Footer */
 footer {
+    color: white;
+    margin-top: 20px;
     text-align: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
