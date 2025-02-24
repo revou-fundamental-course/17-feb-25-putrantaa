@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mini Project</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -45,6 +45,8 @@
             <aside class="main-container">
                 <div class="gambar">
                     <img src="assets/1.jpg" alt="ilustrasi" class="ilustrasi1">
+                    <img src="assets/2.jpg" alt="ilustrasi" class="slide">
+                    <img src="assets/3.jpg" alt="ilustrasi" class="slide">
                 </div>
                     <p id="caption">
                         "Liburan jadi menyenangkan bersama Travel Agentku."
@@ -95,14 +97,14 @@
                     <p class="contact-deskripsi">
                         Sales akan menghubungi anda 1x24 Jam setelah data kami terima.
                     </p>
-                    <form>
+                    <form method="post" autocomplete="off">
                         <div class="form-group">
                             <label for="name">Your Name:</label>
-                            <input type="text" id="name" placeholder="First and last name">
+                            <input type="text" id="name" placeholder="First and last name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address:</label>
-                            <input type="email" id="email" placeholder="example@email.com">
+                            <input type="email" id="email" placeholder="example@email.com" required>
                         </div>
                         <div class="form-group">
                             <label for="interest">What are you interest in?</label>
@@ -201,6 +203,8 @@
         </div>
         <p>© 2025 putranta</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
