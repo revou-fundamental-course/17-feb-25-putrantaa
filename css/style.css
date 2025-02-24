@@ -360,3 +360,103 @@ footer {
 }
 
 /* Responsive */
+/* Media Query untuk Tablet (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .our-package-content .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #call-us-section {
+        padding: 60px;
+    }
+}
+
+/* Media Query untuk Mobile (≤ 768px) */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding-inline: 0;
+        gap: 1rem;
+    }
+
+    .foto {
+        margin: auto;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-container {
+        width: 95%;
+    }
+
+    .ikon {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form {
+        text-align: center;
+    }
+
+    .contact-form .form-group {
+        text-align: left;
+    }
+
+    .our-package-content .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-submit2 {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Media Query untuk HP Kecil (≤ 480px) */
+@media screen and (max-width: 480px) {
+    header .judul1 h1 {
+        font-size: 20px;
+    }
+
+    header .judul2 h4 {
+        font-size: 16px;
+    }
+
+    .our-package-content .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #call-us-section {
+        padding: 40px;
+    }
+
+    .btn-submit2 {
+        font-size: 14px;
+        padding: 0.75rem;
+    }
+
+    .footer-links {
+        font-size: 14px;
+    }
+}
