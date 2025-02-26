@@ -383,10 +383,10 @@ footer {
 /* Media Query untuk Mobile (≤ 768px) */
 @media screen and (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
-        padding-inline: 0;
-        gap: 1rem;
+        padding-inline: 1;
+        gap: 2rem;
     }
 
     .foto {
