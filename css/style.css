@@ -386,8 +386,8 @@ footer {
     nav ul {
         flex-direction: column;
         text-align: center;
-        padding-inline: 1;
-        gap: 2rem;
+        padding-inline: 0;
+        gap: 1rem;
     }
 
     .foto {
