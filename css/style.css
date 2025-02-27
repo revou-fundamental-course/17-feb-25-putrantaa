@@ -384,7 +384,7 @@ footer {
 /* Media Query untuk Mobile (≤ 768px) */
 @media screen and (max-width: 768px) {
     nav ul {
-        flex-direction: row;
+        flex-direction: column;
         text-align: center;
         padding-inline: 1;
         gap: 2rem;
