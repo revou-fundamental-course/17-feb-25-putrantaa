@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Project</title>
 
+    <!-- menghubungkan halaman dengan file CSS -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
     <!-- header & navigation -->
     <header>
+
+        <!-- menampilkan navigasi home, our packages, call us, dan foto -->
         <nav>
             <ul>
                 <li>
@@ -29,6 +33,7 @@
             </ul>
         </nav>
 
+        <!-- menampilkan judul header 1 dan sub judul header 4 -->
         <div class="judul1" id="home">
             <h1>Your Trusted Travel Agent's</h1>
         </div>
@@ -48,10 +53,13 @@
                     <img src="assets/2.jpg" alt="ilustrasi" class="slide">
                     <img src="assets/3.jpg" alt="ilustrasi" class="slide">
                 </div>
+
+                    <!-- menampilkan caption -->
                     <p id="caption">
                         "Liburan jadi menyenangkan bersama Travel Agentku."
                     </p>
-
+                
+                <!-- ikon dan nama pelanggan -->
                 <div class="ikon">
                     <div class="avatar">
                         <img src="assets/circle-user-solid.svg" alt="ikon">
@@ -62,6 +70,7 @@
                     </div>
                 </div>
 
+                <!-- menampilkan informasi layanan -->
                 <div class="informasi">
                     <p class="deskripsi">
                         Use this space to provide users with more information about your offer.
@@ -97,7 +106,9 @@
                     <p class="contact-deskripsi">
                         Sales akan menghubungi anda 1x24 Jam setelah data kami terima.
                     </p>
-                    <form method="post" autocomplete="off">
+
+                    <!-- form berisi nama, email, dan tujuan -->
+                    <form autocomplete="off">
                         <div class="form-group">
                             <label for="name">Your Name:</label>
                             <input type="text" id="name" placeholder="First and last name" required>
@@ -110,8 +121,13 @@
                             <label for="interest">What are you interest in?</label>
                             <select id="interest">
                                 <option>Select option</option>
+                                <option>Bali</option>
+                                <option>Lombok</option>
+                                <option>Yogyakarta</option>
+                                <option>Bandung</option>
                             </select>
                         </div>
+                        <!-- tombol submit -->
                         <button type="submit" class="btn-submit">SEND</button>
                     </form>
                 </div>
@@ -125,6 +141,7 @@
             </header>
         
         <!-- Content Our Packages -->
+        <!-- menampilkan daftar paket destinasi yang memiliki judul, ikon, dan deskripsi -->
             <div class="our-package-content">
                 <div class="grid">
                     <div class="destination">
@@ -189,6 +206,7 @@
                 <p>Suspendisse egestas rhoncus urna in bibendum. Donec urna neque, eusmod sed 
                     justo quis, convallis tindunt risus. Phasellus fringilla odio vel erat fringilla,
                 </p>
+                <!-- tombol submit -->
                 <button type="submit" class="btn-submit2">CALL TO ACTION</button>
             </div>
         </section>
@@ -204,6 +222,7 @@
         <p>© 2025 putranta</p>
     </footer>
 
+    <!-- menghubungkan file javascript -->
     <script src="js/script.js"></script>
 </body>
 
